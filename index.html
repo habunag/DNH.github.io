@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dương Ngọc Hân - Portfolio Cá Nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #764ba2;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 15px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #764ba2;
+        }
+
+        .section-content {
+            margin-left: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+
+        .info-item strong {
+            color: #764ba2;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .info-item p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .achievement-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .achievement-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .achievement-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .achievement-item p {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .hobbies-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .hobby-tag {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .section h2 {
+                font-size: 1.4em;
+            }
+
+            .achievement-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="profile-image">👩‍💻</div>
+            <h1>Dương Ngọc Hân</h1>
+            <p class="subtitle">Chuyên gia An toàn Thông tin</p>
+            <div class="contact-info">
+                <p><strong>📅 Ngày sinh:</strong> 18/04/2008</p>
+                <p><strong>📍 Địa chỉ:</strong> Thành phố Cần Thơ</p>
+                <p><strong>💼 Chuyên môn:</strong> An toàn Thông tin</p>
+            </div>
+        </header>
+
+        <!-- Quá trình học tập -->
+        <section class="section">
+            <h2>📚 Quá trình Học tập</h2>
+            <div class="section-content">
+                <div class="info-item">
+                    <strong>Học tập Chăm chỉ & Siêng Năng</strong>
+                    <p>Tôi là một học sinh luôn nỗ lực hết mình trong học tập, không ngừng cải thiện kỹ năng và kiến thức. Với sự kiên trì và quyết tâm, tôi đã đạt được những thành tích đáng tự hào trong suốt quá trình học sinh.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chuyên môn -->
+        <section class="section">
+            <h2>🔐 Lĩnh vực Chuyên môn</h2>
+            <div class="section-content">
+                <div class="info-item">
+                    <strong>An toàn Thông tin</strong>
+                    <p>Tôi có kiến thức sâu rộng về an toàn thông tin, bao gồm các kỹ năng bảo vệ dữ liệu, phòng chống mã độc, và quản lý an toàn mạng. Đây là lĩnh vực mà tôi đam mê và luôn muốn phát triển sâu hơn.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kinh nghiệm -->
+        <section class="section">
+            <h2>🏆 Kinh nghiệm & Tham gia</h2>
+            <div class="section-content">
+                <div class="info-item">
+                    <strong>Kì thi Tin học Trẻ</strong>
+                    <p>Tôi đã tham gia và tích lũy kinh nghiệm quý báu từ các kì thi tin học trẻ. Những cuộc thi này giúp tôi rèn luyện kỹ năng lập trình, tư duy logic và khả năng giải quyết vấn đề một cách hiệu quả.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thành tích -->
+        <section class="section">
+            <h2>⭐ Thành tích Cá nhân</h2>
+            <div class="achievement-list">
+                <div class="achievement-item">
+                    <p>🎓 12 năm<br>Học sinh Giỏi</p>
+                </div>
+                <div class="achievement-item">
+                    <p>💪 Bé Khỏe<br>Bé Ngoan</p>
+                </div>
+                <div class="achievement-item">
+                    <p>🌟 Nỗ lực<br>Không ngừng</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sở thích -->
+        <section class="section">
+            <h2>🎯 Sở thích & Đam mê</h2>
+            <div class="section-content">
+                <p style="margin-bottom: 20px; color: #666;">Tôi có nhiều sở thích giúp tôi phát triển cân bằng giữa công việc và cuộc sống:</p>
+                <div class="hobbies-list">
+                    <span class="hobby-tag">🍽️ Ăn Ngon</span>
+                    <span class="hobby-tag">📖 Đọc Sách</span>
+                    <span class="hobby-tag">🎮 Chơi Game</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Dương Ngọc Hân - Bài tập tạo portfolio cá nhân | Được tạo với ❤️ bằng HTML & CSS</p>
+        </footer>
+    </div>
+</body>
+</html>
